@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="nav-container">
+        <nav class="space-between">
+            <h1>DojoWeather</h1>
+            <ul class="flex links">
+                <li class="clear-li"><a onclick="cityName1()" class="city" href=""><span id="city-1">Burank</span></a></li>
+                <li class="clear-li"><a onclick="cityName2()" class="city" href=""><span id="city-2">Chicago</span></a></li>
+                <li class="clear-li"><a onclick="cityName3()" class="city" href=""><span id="city-3">Dallas</span></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- nav section -->
+    <div class="weather-content">
+
+        
+
+        <div class="your-city flex">
+            <h2>San Jose</h2>
+            <!-- flex of 1 to align the options to the right and header on left -->
+            <div class="temperature-option flex-1 flex">
+                <p>show temperature in </p>
+                <select onchange="changeUnit()" id="temp-unit">
+                    <option value="c">° Celcius</option>
+                    <option value="f">° Faranheit</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="weather-cards space-between">
+            <div class="weather-card flex-1">
+                <h3 class="pt">Today</h3>
+                <img class="weather-icon" src="./assets/some_sun.png" alt="">
+                <p class="pt">OH SO SUNNY</p>
+                <div class="pt current-temps">
+                    <p class="highs"><span class="high">65</span>°</p>
+                    <p class="lows"><span class="high">65</span>°</p>
+                </div>
+            </div>
+            <div class="weather-card flex-1">
+                <h3 class="pt">Today</h3>
+                <img class="weather-icon" src="./assets/some_clouds.png" alt="">
+                <p class="pt">BIT O' CLOUDS</p>
+                <div class="pt current-temps">
+                    <p class="highs"><span class="high">20</span>°</p>
+                    <p class="lows"><span class="high">24</span>°</p>
+                </div>
+            </div>
+            <div class="weather-card flex-1">
+                <h3 class="pt">Today</h3>
+                <img class="weather-icon" src="./assets/some_rain.png" alt="">
+                <p class="pt">IT BE POURING</p>
+                <div class="pt current-temps">
+                    <p class="highs"><span class="high">18</span>°</p>
+                    <p class="lows"><span class="high">15</span>°</p>
+                </div>
+            </div>
+            <div class="weather-card flex-1">
+                <h3 class="pt">Today</h3>
+                <img class="weather-icon" src="./assets/some_sun.png" alt="">
+                <p class="pt">SUN IS BACK TO STAY</p>
+                <div class="pt current-temps">
+                    <p class="highs"><span class="high">10</span>°</p>
+                    <p class="lows"><span class="high">9</span>°</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- cookie -->
+        <div class="space-evenly cookie">
+            <img class="pl cookie-img" src="./assets/cookie.png" alt="">
+            <div class="cookie-words">
+                <h4>Stop! Cookie Time</h4>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media
+                    features and to analyze our traffic. <a href="#">Read more...</a></p>
+            </div>
+
+            <input onclick="removeCookie()" class="mr" type="button" value="I Accept">
+        </div>
+
+    </div>
+
+    <footer>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
